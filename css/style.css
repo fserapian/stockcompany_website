@@ -1,0 +1,252 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+/* Root Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Robot Condensed', sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: #fcff4f;
+}
+
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+.btn {
+    display: inline-block;
+    background: #fcff4f;
+    color: #000;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn:hover {
+    background: #d7da44;
+}
+
+.btn-dark {
+    background: #000;
+    color: #fff;
+}
+
+.bg-light {
+    background: #f4f4f4;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-primary {
+    background: #fcff4f;
+    color: #000;
+}
+
+.shadowy {
+    text-shadow: 1px 1px 1px #000;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted #444;
+}
+
+/* added code */
+.info-link {
+    color: white;
+}
+
+.info-link:hover {
+    color: #fcff4f;
+}
+
+/* Navbar */
+#navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background: #000;
+    color: white;
+    padding: 1rem;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#navbar .logo {
+    margin-left: 50px;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar ul li {
+    padding: 0.5rem 0.5rem;
+}
+
+#navbar ul li a {
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+    color: #fcff4f;
+    border-bottom: 5px solid #fcff4f;
+}
+
+/* Showcase Header */
+#showcase {
+    background: #333 url('../img/showcase2.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem;
+    /* Overlay */
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+/* Services Section */
+#services .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#services .items .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#services .items .item i {
+    color: #fcff4f;
+    background: black;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+/* About Section */
+#about {
+    display: flex;
+}
+
+#about div {
+    flex: 1;
+}
+
+#about .about-img {
+    background: #444 url('../img/brainstorming.jpg') no-repeat center center/cover;
+}
+
+/* Clients Section */
+#clients .items {
+    display: flex;
+    flex-direction: row;
+}
+
+#clients .items img {
+    display: block;
+    margin: auto;
+    width: 10%;
+}
+
+/* Contact Section */
+#contact {
+    display: flex;
+}
+
+#contact .contact-form, #contact .map {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form form .form-group label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+/* Google Map */
+/* .map {
+    height: 100%;
+} */
+
